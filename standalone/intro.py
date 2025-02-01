@@ -23,3 +23,75 @@ else:
 
 box = input("Enter your age: ")
 print(box)
+
+# lists and loops
+name = [1,2,3,4,"strings"]
+# 0, 1, 2, 3, 4
+# index, address
+# 1st spot
+print (name[0])
+name[0] = "goob"
+print (name[0])
+
+# tuples
+name = (1,2,3,4,34,34,3,4,34,3)
+# name[0] = 20, doesn't work!!!
+
+# coordinates
+# keep track of a specific spot in a list
+tuple = (0,0)
+#tuples cannot be edited
+
+list = [[1],1]
+list[tuple[0]][tuple[1]]
+
+#set
+name = {1,2,2,2,2,2,2,2,2,3,4,5}
+print (name)
+l = [1,2,12,2,2,2,2,2222,2,2,2,2,2,2,2]
+l = set(l)
+print (l)
+#sets have no repeats
+
+
+# loops, are basically a way to do repetive code or tasks efficiently
+count = 5
+print(count)
+count -= 1
+print(count)
+count -= 1
+print(count)
+count -= 1
+print(count)
+count -= 1
+print(count)
+count -= 1
+print(count)
+
+
+# while loop, good for when you don't know how long something should run
+print("WHILE")
+countW = 5
+while countW > -1:
+  print(countW)
+  countW -= 1
+  #code
+  #continue
+  #break
+
+# for loop, good for when you do know how long something should run
+print("FOR")
+countF = 5
+list = [1,2,3,4,5]
+# range(5) -> [0,1,2,3,4]
+#range(start,end,stride)
+print(range(1,5, 2))
+for i in range(5,-1,-1):
+  print(i)
+# list = [1,2,4, "done"]
+# # iterate
+# for num in list:
+#   if num == 3:
+#     print("found it!")
+for temp in range(2):
+  print("goob")
