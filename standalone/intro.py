@@ -98,25 +98,25 @@
 
 
 #lists
-saich_way = ["bob", "jeff", "rob"]
-# index 0,1,2
-# len(list) -1
-print(saich_way)
-print(saich_way[2])
+# saich_way = ["bob", "jeff", "rob"]
+# # index 0,1,2
+# # len(list) -1
+# print(saich_way)
+# print(saich_way[2])
 
 
-saich_way.pop(1)
-print(saich_way)
-saich_way.append("jeff")
-print(saich_way)
+# saich_way.pop(1)
+# print(saich_way)
+# saich_way.append("jeff")
+# print(saich_way)
 
-saich_way[0] = "jimbo"
-print(saich_way)
+# saich_way[0] = "jimbo"
+# print(saich_way)
 
-list = [[1,2,3,4],
-        [5,6,7,8]]
+# list = [[1,2,3,4],
+#         [5,6,7,8]]
 
-print(list[0][1])
+# print(list[0][1])
 
 # casting:
 # str()
@@ -132,3 +132,24 @@ print(list[0][1])
 # tuple, (), is a list that can't be changed
 # set, {}, is a list that has no duplicates
 # dictionary, {key:value}, its a list with no order (uses keys instead of indexes)
+
+
+# while else, for else
+# attempts = 5
+# for i in range(attempts):
+#     print(i)
+#     if i == 3: # win
+#         print("you win")
+#         break
+# else:
+#     print("you lose")
+
+# a = 5
+# while a > 0:
+#     print(a)
+#     if a == 3:
+#         print("Error")
+#         break
+#     a-=1
+# else:
+#     print("blast off")
