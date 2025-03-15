@@ -11,7 +11,7 @@ import random
 choices = ["Rock", "Paper", "Scissors"]
 wins = 0
 losses = 0
-draw = 0
+draws = 0
 gameOver = False
 start = True
 while not gameOver:
@@ -24,6 +24,10 @@ while not gameOver:
             print("Goodbye!")
             gameOver = True
             break
+        elif answer == "yes" or answer == "y":
+            pass
+        else:
+            print("I'm going to assume you want to keep playing")
         
     # randomly picks robot choice
     robot = random.choice(choices) 
@@ -43,21 +47,21 @@ while not gameOver:
 
     # displays results
     if(player == robot):
+        draws += 1
         print("Draw")
-        
         print(f"Wins: {wins}")
         print(f"Losses: {losses}")
-        print(f"Draws:{draw}")
+        print(f"Draws: {draws}")
     elif (player == "Rock" and robot == "Scissors") or (player == "Scissors" and robot == "Paper") or (player == "Paper" and robot == "Rock"):
         wins += 1
         print("You win")
         print(f"Wins: {wins}")
         print(f"Losses: {losses}")
-        print(f"Draws:{draw}")
+        print(f"Draws: {draws}")
     else:
         losses += 1
         print("You lose")
         print(f"Wins: {wins}")
         print(f"Losses: {losses}")
-        print(f"Draws:{draw}")
+        print(f"Draws: {draws}")
     start = False
