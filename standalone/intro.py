@@ -153,3 +153,20 @@
 #     a-=1
 # else:
 #     print("blast off")
+
+
+# formatted strings:
+# name = "Bob"
+# print("Hi " + name + ", it's nice to meet you " + name)
+# print(f"Hi {name}, it's nice to meet you {name}")
+
+# python is dynamically typed
+    # in python ther eis no type checking, you can save any data type in any variable
+    # its alot easier to write
+    # var = 20
+    # var = ["a", 1, True, {1,(1,2)}]
+# ohter langauges like C++ or Java are statically typed
+    # there is type checking, you can only save data of the set type for the variable or you get an error
+    # int var = 10
+    # var = "error"
+    # int name[] = [1,"error"]
